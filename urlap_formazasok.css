@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+body {
+
+    background: url('bg.jpg');
+}
+
+* {
+    box-sizing: border-box;}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;    
+    padding: 0; 
+    font-family: 'Walter Turncoat', cursive;
+    color: violet;
+    text-shadow: 1px 0.5px 0.5px rgba(0, 0, 0, 0.5);     
+    font-size: 16px;
+    background: lightsteelblue;
+    border: 2px solid pink;
+    box-shadow: 1px 3px 5px plum;
+    
+}
+
+h2{
+    text-shadow: 0.5px 1px 0.5px black;
+}
+
+li{
+    list-style-type: none;
+}
+
+header, footer {
+    width: 100%;
+    background: bisque;    
+    border-radius: 5px;    
+    box-shadow: 1px 3px 5px pink;    
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+header h1{
+    
+    filter: drop-shadow(2px 3px 3px rgb(160, 0, 210, 0.4));
+    text-shadow: 1px 1px 1px grey;
+    text-shadow: 0.5px 0.5px 0.5px black;
+
+}
+
+nav{
+    background: lightblue;
+}
+
+
+nav, article, aside {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid plum;
+    border-radius: 5px;
+}
+
+nav li{
+    display: flex;    
+    margin-bottom: 5px;
+    
+}
+
+ul{
+    padding: 0;
+   
+}
+
+
+.container{
+   
+    
+}
+
+table{
+    display: flex;
+    justify-content: center;    
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+}
+
+
+
+.jobb{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.bal{
+    text-align: left;
+}
+
+
+nav a{
+    width: 100%;
+    text-align: center;
+    font-size: 75%;   
+    letter-spacing: 0.5px;
+}
+
+
+section p {
+    text-align: justify;
+    background: lightblue;
+    border: 1px solid pink;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+textarea {
+    width: 100%;
+}
+
+
+legend, aside h3{
+    font-weight: bold;
+    color: lightblue;
+    font-size: 120%;
+    background: plum;
+    border: 1.5px solid pink;
+    box-shadow: 2px 2px 5px plum;
+    border-radius: 5px;
+    padding: 5px;
+    text-shadow: 1.5px 1px 1px black;
+}
+
+input[type=text], input[type=tel], input[type=date], input[type=number], input[type=url], input[type=email], textarea{
+    background: rgba(236, 217, 234);
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 75%;
+    filter: drop-shadow(1px 1px 1px rgb(160, 0, 210, 0.4));
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type=submit], input[type=reset] {
+    font-family: 'Walter Turncoat', cursive;    
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+textarea {    
+    font-family: 'Walter Turncoat', cursive;
+}
+
+
+
+
+fieldset {
+    border-top: 1px solid pink;    
+    margin: 10px;
+    box-shadow: 1px 1px 2px plum;
+    border: 1px solid pink;
+    background: lightblue;
+    border-radius: 5px;
+
+}
+
+nav a, input[type=submit], input[type=reset]{
+    color: orchid;
+    font-weight: bold;
+    background: bisque;
+    padding: 5px;
+    border: 2px solid pink;
+    border-radius: 5px;  
+   text-shadow: 0.5px 0.5px 0.5px purple;
+    filter: drop-shadow(3px 3px 2px rgb(160, 0, 210, 0.3));
+    transition: 0.5s all;
+    transition-property: background, color, border;
+
+}
+
+nav a:hover, input[type=submit]:hover, input[type=reset]:hover{
+    background: lightblue;
+    border: 2px solid orchid;
+    color: darkorchid;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+@media screen and (max-width: 765px){
+
+  
+
+    }
+
+
+
+

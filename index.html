@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="hu">
+    <head>
+
+        <title>Antal Adrienn - Űrlap reguláris kifejezésekkel</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Forms with regex">
+        <meta name="keywords" content="HTML, CSS, Űrlap, RegEx">
+        <meta name="author" content="Antal Adrienn">       
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
+
+
+        <link href="urlap_formazasok.css" rel="stylesheet" type="text/css"/>
+        <link href="urlap_szerkezet.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Üdvözöljük a weblapunkon!</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Kezdőlap</a></li>
+                    <li><a href="#">Űrlap</a> </li>
+                    <li><a href="#">Menü</a></li>
+                </ul>
+
+
+
+
+            </nav>
+            <article>
+                <h2>Regisztrációs űrlap</h2>
+
+
+                <form action="feldolgoz.php" target="_blank" method="post" >  
+                    <fieldset>
+                        <legend>Személyes adatok</legend>
+                        <div class="container">
+                            <table>
+                                <tr>
+                                    <td class="jobb"><label for="nev">Teljes név: *</label></td>
+                                    <td ><input type="text" name="nev" id="nev" required placeholder="Vezetéknév Keresztnév" title="A vezetéknév és a keresztnév nagy betűvel kezdődik. A neveket szóköz választja el." pattern="([A-ZÁÉÍÓÖŐUÚÜŰ][a-záéíóöőuúüű'][a-záéíóöőuúüű]*[ -]?){2,6}"></td>
+                                </tr>
+                                <tr>
+                                    <td class="jobb"><label for="szdatum">Születési dátum: *</label></td>
+                                    <td><input type="date" name="szdatum" id="szdatum" required value="2003-01-01"
+       min="2003-01-01"></td>
+                                </tr>
+                                <tr>
+                                    <td class="jobb"><label for="email">E-mail cím: *</label></td>
+                                    <td><input type="email" name="email" id="email" required placeholder="pl.: valaki@vmi.hu" pattern="^[A-Za-z\d_-]+@[A-Za-z\d_-]+.[A-Za-z]{2,3}$"></td>
+                                </tr>
+                                <tr>
+                                    <td class="jobb"><label for="pnumber">Telefonszám: *</label></td>
+                                    <td><input type="tel" name="pnumber" id="pnumber" required placeholder="pl.: +36-30-123-1234" pattern="^[+][1-9]-?\d?\d?\d?-\d\d\d?-\d\d\d-\d\d\d\d$"></td>
+                                </tr>
+                            </table>          
+                            
+                            
+                        </div>
+
+                    </fieldset>
+
+
+                    <fieldset>
+                        <legend>Egyéb tudnivalók</legend>
+                        <label for="nev">Weboldal címe:</label>
+                        <input type="url" name="weboldal" id="weboldal" placeholder="pl.: http://weboldalcim.hu" pattern="^https?:\/\/[A-Za-z\d][A-Za-z-_\d]+.[a-z]{2,3}$"><br> 
+
+                        <label for="megj">Megjegyzés:</label>
+                        <br>
+                        <textarea cols="50" rows="10" name="megj" id="megj" placeholder="Komment" required></textarea>
+
+                    </fieldset>
+
+                    <input type="submit" value="Küld">
+                    <input type="reset" value="Töröl">
+                </form>
+
+
+
+            </article>
+
+
+
+            <aside>
+                <section>
+                    <h3>
+                        Érdekességek</h3>
+                    <p>
+                        Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. In convallis tellus a mauris. Curabitur non elit ut libero tristique sodales. Mauris a lacus. Donec mattis semper leo. In hac habitasse platea dictumst. Vivamus facilisis diam at odio. Mauris dictum, nisi eget consequat elementum, lacus ligula molestie metus, non feugiat orci magna ac sem. Donec turpis. Donec vitae metus. Morbi tristique neque eu mauris. Quisque gravida ipsum non sapien. Proin turpis lacus, scelerisque vitae, elementum at, lobortis ac, quam. Aliquam dictum eleifend risus. In hac habitasse platea dictumst. Etiam sit amet diam. Suspendisse odio. Suspendisse nunc. In semper bibendum libero.
+                    </p>
+
+                </section>
+                <section>
+                    <h3>
+                        Legutóbbi cikkek</h3>
+                    <p>
+                        Proin nonummy, lacus eget pulvinar lacinia, pede felis dignissim leo, vitae tristique magna lacus sit amet eros. Nullam ornare. Praesent odio ligula, dapibus sed, tincidunt eget, dictum ac, nibh. Nam quis lacus. Nunc eleifend molestie velit. Morbi lobortis quam eu velit. Donec euismod vestibulum massa. Donec non lectus. Aliquam commodo lacus sit amet nulla. Cras dignissim elit et augue. Nullam non diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Aenean vestibulum. Sed lobortis elit quis lectus. Nunc sed lacus at augue bibendum dapibus.
+                    </p>
+                </section>
+            </aside>
+            <footer>
+                <p>Céggel kapcsolatos információk</p>
+            </footer>
+        </main>
+    </body>
+</html>
